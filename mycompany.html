@@ -182,9 +182,10 @@
             width: 80%;
             max-width: 300px;
             margin: 0 auto;
-            aspect-ratio: 3 / 4; /* Mantener la proporción */
-            background-size: cover;
+            background-size: contain; /* Ajustar tamaño */
             background-position: center;
+            background-repeat: no-repeat; /* Evitar repetición */
+            aspect-ratio: 3 / 4; /* Mantener la proporción */
         }
         .team .member .name {
             margin-top: 15px;
@@ -196,22 +197,32 @@
             color: gray;
         }
         .karen {
-            background-image: url('img/karenmycompany.jpeg');
+            background-image: url('img/karenmycompany\ \(2\).jpeg');
+            height: 300px; /* Altura específica para Karen */
         }
         .alejandro {
             background-image: url('img/alejandro.png');
+            height: 300px; /* Ajustar altura para Alejandro */
         }
         .horacio {
             background-image: url('img/horacio.png');
+            height: 300px; /* Ajustar altura para Horacio */
         }
         .angel {
             background-image: url('img/angel.png');
+            height: 300px; /* Ajustar altura para Ángel */
         }
     
         @media (max-width: 768px) {
             .team .member .image-placeholder {
                 width: 70%;
-                max-width: 200px;
+                max-width: 300px;
+            }
+            .karen {
+                height: 300px; /* Ajustar altura para pantallas más pequeñas */
+            }
+            .alejandro, .horacio, .angel {
+                height: 225px; /* Ajustar altura para pantallas más pequeñas */
             }
         }
     
@@ -219,6 +230,12 @@
             .team .member .image-placeholder {
                 width: 60%;
                 max-width: 150px;
+            }
+            .karen {
+                height: 200px; /* Ajustar altura para pantallas más pequeñas */
+            }
+            .alejandro, .horacio, .angel {
+                height: 150px; /* Ajustar altura para pantallas más pequeñas */
             }
         }
     </style>
@@ -256,6 +273,7 @@
         </div>
     </div>
     <!-- Team End -->
+    
     
 
 
